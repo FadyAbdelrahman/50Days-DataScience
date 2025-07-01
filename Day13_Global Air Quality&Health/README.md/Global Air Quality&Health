@@ -1,0 +1,49 @@
+# 🌍 Global Air Quality and Respiratory Health Outcomes - Day 13  
+
+## Author  
+👤 **Fady Abdelrahman**  
+[LinkedIn](https://www.linkedin.com/in/fady-abdelrahman-a649a12b6/)  
+
+## Goal  
+Investigate air quality trends and their effects on respiratory health using a global dataset, identifying key patterns and correlations.  
+
+## Dataset  
+- **Source**: air_quality_health_dataset.csv  
+- **Format**: CSV  
+- **Columns**:  
+  - `city`  
+  - `date`  
+  - `aqi`  
+  - `pm2_5`  
+  - `pm10`  
+  - `no2`  
+  - `o3`  
+  - `temperature`  
+  - `humidity`  
+  - `hospital_admissions`  
+  - `population_density`  
+  - `hospital_capacity`  
+
+## Methods  
+- **Data Cleaning**: Converted `date` to datetime, verified no missing values.  
+- **Analysis**: Grouped data by city, year, and population density; calculated averages and correlations.  
+- **Visualizations**:  
+  - Line plot: AQI over time (London).  
+  - Scatter plot: PM2.5 vs. hospital admissions.  
+  - Boxplot: AQI by population density.  
+  - Heatmap: Pollutants by city and correlations.  
+  - Bar chart: Hazardous AQI days.  
+  - Histogram: PM10 distribution.  
+
+## Key Insights  
+- **Severe Pollution**: Delhi has 10,492 days with AQI > 300, far ahead of Beijing (6,725).  
+- **Health Impact**: Weak positive correlation between PM2.5 and hospital admissions.  
+- **Rural AQI**: Higher average AQI in rural areas (252.39) than urban (249.05).  
+- **Temporal Trends**: Lower AQI on weekends; annual AQI fluctuates without a clear trend.  
+
+## Output  
+- Visualizations saved for trends, correlations, and distributions.  
+
+
+---  
+Part of my **50 Days of Python + Data Science Challenge**. Follow for more!
