@@ -1,0 +1,54 @@
+# 🌍 Day 14: Monthly Electricity Production Analysis (2010-2022)  
+
+## Author  
+👤 **Fady Abdelrahman**  
+[LinkedIn](https://www.linkedin.com/in/fady-abdelrahman-a649a12b6/)  
+
+## Goal  
+Analyze global electricity production trends from 2010 to 2022, focusing on energy sources, renewables, and regional contributions to understand the evolving landscape of electricity generation.  
+
+## Dataset  
+- **Source**: data.csv (Monthly Electricity Production in GWh [2010-2022])  
+- **Format**: CSV  
+- **Columns**:  
+  - `COUNTRY`  
+  - `CODE_TIME`  
+  - `TIME`  
+  - `YEAR`  
+  - `MONTH`  
+  - `MONTH_NAME`  
+  - `PRODUCT`  
+  - `VALUE`  
+  - `DISPLAY_ORDER`  
+  - `yearToDate`  
+  - `share`  
+
+## Methods  
+- **Data Cleaning**:  
+  - Checked for missing values; `yearToDate` had 17,105 missing entries.  
+  - Mapped countries to continents using a custom dictionary for regional analysis.  
+- **Feature Engineering**:  
+  - Grouped data by country, year, month, and energy source.  
+  - Calculated total production, renewable shares, and production volatility.  
+- **Visualizations**:  
+  - Line plot: Total electricity production by year.  
+  - Bar chart: Top energy sources by total production.  
+  - Pie chart: Renewables vs. non-renewables.  
+  - Bar chart: Average monthly electricity production.  
+  - Bar chart: Production volatility by country.  
+
+## Key Insights  
+- **Top Producers**: OECD Total leads with over 924 million GWh, followed by IEA Total and OECD Americas.  
+- **Energy Sources**: Non-renewables like coal and natural gas dominate, but renewables like hydro, wind, and solar are on the rise.  
+- **Renewables Share**: Europe leads in renewable energy share, while Asia has the highest total production.  
+- **Seasonal Trends**: Production peaks in winter months like January and December.  
+
+## Output  
+- Visualizations saved for:  
+  - Total Electricity Production by Year  
+  - Top Energy Sources by Total Production  
+  - Renewables vs. Non-Renewables  
+  - Average Monthly Electricity Production  
+  - Production Volatility by Country  
+---  
+Part of my **50 Days of Python + Data Science Challenge**. Follow for more!
